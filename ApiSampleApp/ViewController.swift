@@ -61,7 +61,7 @@ extension ViewController: UITableViewDataSource {
         let cell: TableViewCell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell") as! TableViewCell
         let article = articles[indexPath.row]
         let title = article["title"] as? String ?? "" // nil合体演算子を使用
-        cell.textLabel?.text = "tittle: \(title)"
+        cell.textLabel?.text = "タイトル: \(title)"
         return cell
     }
     
